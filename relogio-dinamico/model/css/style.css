@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family:'Noto Sans JP', sans-serif ;
+    font-weight: normal;
+}
+
+body {
+    height: 100vh;
+    background: linear-gradient(120deg, #413f3f, #e6e6e6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.relogio{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 500px;
+    height: 200px;
+    background: transparent;
+    border-radius: 3px;
+    box-shadow: 0px 8px 10px rgba(0, 0, 0, 0.281);
+}
+
+.relogio div {
+    width: 150px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    background: rgb(59, 56, 56);
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.301);
+    border-radius: 7px;
+    letter-spacing: 1px;
+}
+
+.relogio span{
+    
+}

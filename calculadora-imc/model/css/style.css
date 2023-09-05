@@ -100,6 +100,11 @@ body{
     outline: none;
 }
 
+.ifield ::placeholder{
+    font-size: 13px;
+
+}
+
 #calcular{
     border: none;
     font-size: 17px;

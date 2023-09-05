@@ -210,5 +210,9 @@ body{
         height: 100%;
         border-radius: 0;
         justify-content: center;
+        
+    }
+    #calcular{
+        margin-top: 10px;
     }
 }

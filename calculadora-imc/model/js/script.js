@@ -16,7 +16,7 @@ form.addEventListener('submit', function(event){
     document.getElementById('infos').classList.remove('hidden')
 
     if (bmi < 18.5){
-        description = "Cuidado! Você está a baixo do peso!"
+        description = "Cuidado! Você está abaixo do peso!"
     } else if (bmi >= 18.5 && bmi <= 25){
         description = 'Você está no peso ideal!'
         value.classList.remove('attention')
@@ -28,7 +28,7 @@ form.addEventListener('submit', function(event){
     } else if (bmi > 35 && bmi <= 40){
         description = 'Cuidado! Você está com Obesidade severa'
     } else {
-        description = 'Cuidado! Você está com Obesidade morbida!'
+        description = 'Cuidado! Você está com Obesidade mórbida!'
     }
     value.textContent = bmi.replace('.', ',')
     document.getElementById('description').textContent = description

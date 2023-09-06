@@ -1,0 +1,210 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400&display=swap');
+
+:root{
+    --color-light-50:white;
+
+    --color-dark-50: rgb(39, 36, 36);
+    --color-dark-100:rgb(19, 18, 18);
+    --color-dark-900: black;
+
+    --color-gray-50: rgb(104, 100, 100);
+    --color-gray-100: rgb(56, 55, 55);
+    --color-gray-900: rgb(34, 33, 33);
+
+    --color-gradient: linear-gradient(90deg, var(--color-gray-900), var(--color-gray-100), var(--color-gray-50));
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans JP', sans-serif;
+    box-sizing: border-box;
+}
+
+#container{
+    height: 100vh;
+    width: 100%;
+    background: var(--color-gradient);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#log-form{
+    background-color: var(--color-light-50);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    border-radius: 8px;
+    gap: 30px;
+    box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.26);
+    height: fit-content;
+    animation: dark-to-light 0.3s ease-in-out;
+}
+
+#formheader{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#formheader h1{
+    font-size: 40px;
+    font-weight: normal;
+    position: relative;
+}
+
+#formheader h1::before{
+    position: absolute;
+    content:'';
+    width: 40%;
+    background-color: var(--color-gray-50);
+    height: 3px;
+    bottom: 4px;
+    border-radius: 5px;
+}
+
+#formheader i{
+    cursor: pointer;
+    font-size: 25px;
+}
+
+#socialmedia{
+    display: flex;
+    justify-content: space-around;
+}
+#socialmedia img{
+    width: 35px;
+}
+
+#socialmedia img:hover{
+    transform: scale(1.2);
+}
+
+#input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+}
+
+.ibox{
+    font-size: 14px;
+    color: var(--color-dark-);
+}
+
+.ifield{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 3px;
+    cursor: text;
+    border-bottom: 1px solid var(--color-gray-50);
+    
+}
+
+.ifield span {
+    font-size: 18px;
+    color: var(--color-dark-900);
+
+}
+
+.ifield input{
+    border: none;
+    background-color: transparent;
+    width: 260px;
+    font-size: 16px;
+    padding: 0px 5px;
+}
+
+.ifield input:focus{
+    outline: none;
+}
+
+#fpassword a{
+    text-decoration: none;
+    font-size: 12px;
+    color: var(--color-gray-50);
+}
+
+#fpassword a:hover{
+    color: var(--color-dark-900);
+}
+
+#loginbtn{
+    border: none;
+    background: var(--color-gradient);
+    color: var(--color-light-50);
+    padding: 7px;
+    font-size: 18px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+#loginbtn:hover{
+    transform: scale(1.03);
+}
+
+.pe{
+    text-align: center;
+   
+    font-weight: normal;
+    
+}
+
+.pe a{
+    color: black;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.pe a:hover{
+    font-size: 13px;
+    transition: 0.5s;
+}
+.dark#log-form{
+    color: var(--color-light-50);
+    background-color: var(--color-dark-100);
+    animation: light-to-dark 0.3s ease-in-out;
+
+}
+
+.dark#log-form .ifield input, .dark#log-form .ifield i{
+    color: var(--color-light-50);
+}
+
+.dark, .ifield span{
+    color: var(--color-gray-50);
+}
+
+
+.dark #fpassword a:hover{
+    color: rgb(158, 146, 146);
+}
+
+.dark .pe a{
+    color: rgb(153, 151, 151);
+}
+
+@keyframes dark-to-light{
+    0%{
+        background-color: var(--color-dark-100);
+    }
+
+    100%{
+        background-color: var(--color-light-50);
+    }
+}
+
+@keyframes light-to-dark{
+    0%{
+        background-color: var(--color-light-50);
+    }
+
+    100%{
+        background-color: var(--color-dark-100);
+    }
+}

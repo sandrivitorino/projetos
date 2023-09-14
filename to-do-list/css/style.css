@@ -21,7 +21,7 @@
     width: 100%;
     max-width: 540px;
     background: #fff;
-    margin: 100px auto 200px;
+    margin: 100px auto 10px;
     padding: 40px 30px 70px;
     border-radius: 10px;
 }
@@ -70,3 +70,61 @@ button{
     margin-left: -60px;
 }
 
+ul li{
+    list-style: none;
+    font-size: 16px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+}
+
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-image: url(../images/unchecked.png);
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 8px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image: url(../images/checked.png);
+}
+
+footer{
+    text-align: center;
+    color: #edeef0;
+    font-size: 13px;
+}
+footer a{
+    text-decoration: none;
+    color: #edeef0;
+    cursor: pointer;
+}
+
+ul li span{
+    position: absolute;
+    right: 0;
+    top: 16px;
+    width: 26px;
+    height: 24px;
+    font-size: 18px;
+    color: #555;
+    line-height: 22px;
+    text-align: center;
+    border-radius: 50%;
+}
+
+ul li span:hover{
+    background: #edeef0;
+}

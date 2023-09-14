@@ -4,17 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>To Do List</title>
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <div class="container">
         <div class="todo-app">
-            <h2>To-Do List <img src="images/icon.png" alt="icon"></h2>
+            <h2>Lista de afazeres <img src="images/icon.png" alt="icon"></h2>
             <div class="row">
-                <input type="text" id="input-box" placeholder="Adicione seu tarefa">
-                <button>Adicionar</button>
+                <input type="text" id="input-box" placeholder="Adicione sua tarefa">
+                <button onclick="addTask()">Adicionar</button>
             </div>
+            <ul id="list-container">
+                <!--<li class="checked">Tarefa 1</li>
+                <li class="">Tarefa 2</li>
+                <li class="">Tarefa 3</li> -->
+            </ul>
         </div>
+        <footer>
+            Developer by &copy;<a href="https://github.com/sandrivitorino" target="_blank">VitorinoCorp.</a>
+        </footer>
     </div>
 
 

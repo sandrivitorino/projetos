@@ -83,6 +83,7 @@ function selectResposta(e){
     const eCorreto = btnSelecionado.dataset.correct === "true";
     if(eCorreto){
         btnSelecionado.classList.add("correct");
+        score++;
     }else{
         btnSelecionado.classList.add("incorrect");
     }
@@ -96,6 +97,29 @@ function selectResposta(e){
 
 }
 
+function showScore(){
+    resetState();
+    questElement.innerHTML = `Você acertou ${score} de ${perguntas.length} perguntas!`;
+    nextButton.innerHTML = "Começe novamente"
+    nextButton.style.display = "block"
+}
+
+function handleNextButton(){
+    currentQuestionIndex++;
+    if(currentQuestionIndex < perguntas.length){
+        showQuestion();
+    }else{
+        showScore();
+    }
+}
+
+nextButton.addEventListener("click", ()=>{
+    if(currentQuestionIndex < perguntas.length){
+        handleNextButton();
+    }else{
+        comecarQuiz();
+    }
+});
 
 comecarQuiz();
 

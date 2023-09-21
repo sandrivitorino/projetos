@@ -1,0 +1,120 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: #fff;
+}
+
+.frase-box{
+    background: #fff;
+    width: 350px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0px rgba(0, 0, 0, 0.26);
+}
+
+.frase-box h2{
+    font-size: 30px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.frase-box h2::after{
+    content: "";
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background: rgba(23, 124, 229);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.frase-box blockquote{
+    font-size: 22px;
+    min-height: 110px;
+}
+
+.frase-box blockquote::before, .frase-box blockquote::after{
+    content: '"';
+}
+
+.frase-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+
+.frase-box span::before{
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: rgba(23, 124, 229);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+
+.frase-box div{
+    width: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.frase-box button{
+    background: rgba(23, 124, 229);
+    color: #fff;
+    border-radius: 25px;
+    border: 1px solid rgba(23, 124, 229);
+    width: 150px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.frase-box button img{
+    width: 25px;
+    margin-right: 10px;
+}
+
+.frase-box button:nth-child(2){
+    background: transparent;
+    color: #333;
+}
+
+.pe{
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 11px;
+    margin-bottom: -20px;
+}
+
+.pe a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+.pe a:hover{
+    font-size: 11.2px;
+    color: rgba(23, 124, 229);
+    transition: 0.3s;
+}

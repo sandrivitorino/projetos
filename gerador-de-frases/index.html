@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Frases</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="frase-box">
+        <h2>Frase do dia</h2>
+        <blockquote id="frase">Carregando...</blockquote>
+        <span id="autor">Carregando...</span>
+        <div>
+            <button onclick="getfrase(api_url)">Nova Frase</button>
+            <button onclick="tweet()"><img src="twitter.png.png" alt="twitter">Tweet</button>
+        </div>
+        <div class="pe">
+            <p>Developer by &copy;<a href="https://github.com/sandrivitorino" target="_blank">Vitorino Corp</a></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

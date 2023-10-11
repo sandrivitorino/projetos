@@ -49,3 +49,16 @@ body{
     align-items: center;
 }
 
+.toast i{
+    margin: 0 10px;
+    font-size: 27px;
+    color: green;
+}
+
+.toast.error i{
+    color: red;
+}
+
+.toast.Invalid i{
+    color: orange;
+}

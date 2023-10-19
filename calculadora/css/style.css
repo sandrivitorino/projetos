@@ -18,6 +18,13 @@
     flex-direction: column;
 }
 
+.container h1{
+    font-size: 22px;
+    color: #fff;
+    font-weight: normal;
+    margin-bottom: 20px;
+    text-align: center;
+}
 .calculadora{
     background: #111;
     padding: 20px;

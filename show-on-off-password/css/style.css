@@ -32,3 +32,32 @@
     color: #fff;
     background: transparent;
 }
+
+button{
+    background: #fff;
+    border: 0;
+    outline: none;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 15px;
+}
+
+button img{
+    width: 30px;
+    
+}
+
+#message{
+    position: absolute;
+    bottom: -30px;
+    color: #fff;
+    font-size: 15px;
+    display: none;
+}
+
+::placeholder{
+    font-size: 15px;
+}
